@@ -1,0 +1,27 @@
+/*
+fonts:
+  font-family: 'Amaranth', sans-serif;
+  font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+colors:
+  Grey dark: rgba(19, 35, 47, 1)
+  Grey light:  rgba(19, 35, 47, 0.9)
+  Green: #1ab188
+*/
+
+p, h2{
+    padding:0;
+    margin:0;
+  } 
+  
+.section_M{
+    text-align: center;
+    padding: 20px;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 20px;
+  }
+.sectionHeader_M{
+    padding: 14px;
+    margin:0;
+    font-weight:bold;
+    font-size: 32px;
+  }

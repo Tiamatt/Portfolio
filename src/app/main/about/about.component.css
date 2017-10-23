@@ -1,0 +1,24 @@
+#about {
+    padding: 60px 20% 40px 20%;
+    color: #CED6D4; 
+    background-color: rgba(19, 35, 47, 0.9);
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+}
+h3{
+    padding: 2px;
+    margin:0;
+    font-size: 32px;
+}
+p{
+    padding: 20px;
+}
+img{
+    width:160px;
+    height: 160px;
+    display: block;
+    margin: 30px auto;
+    box-shadow: 0 0 20px #000;
+}
+.img-thumbnail{
+    background-color: rgba(19, 35, 47, 0.9);
+}
