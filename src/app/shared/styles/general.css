@@ -5,7 +5,7 @@ fonts:
 colors:
   Grey dark: rgba(19, 35, 47, 1)
   Grey light:  rgba(19, 35, 47, 0.9)
-  Green: #1ab188
+  Green: rgba(26, 177, 136, 1) (#1ab188)
 */
 
 p, h2{

@@ -1,0 +1,27 @@
+.navbar{
+    background: rgba(19, 35, 47, 1);
+  }
+  /* stick the nav to the top*/
+  .navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+  .navbar-dark .navbar-brand{
+      color: rgba(26, 177, 136, 1);
+      font-family: 'Amaranth', sans-serif;
+  }
+  /* collapse nav icon */
+  .navbar-dark .navbar-toggler{
+    color: rgba(255,255,255,.7);
+    border-color: rgba(26, 177, 136, 0.8); 
+  }
+
+  .nav-item{
+      color: rgba(26, 177, 136, 1);
+      font-family: 'Amaranth', sans-serif;
+  } 
+  .nav-item:focus, .nav-item:hover{
+    border-bottom: 2px rgba(26, 177, 136, 1) solid;
+  }
