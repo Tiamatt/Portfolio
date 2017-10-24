@@ -1,5 +1,5 @@
 #About {
-    padding: 60px 20% 40px 20%;
+    padding: 60px 20% 5px 20%;
     color: #CED6D4; 
     background-color: rgba(19, 35, 47, 0.9);
     font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
@@ -7,10 +7,10 @@
 h3{
     padding: 2px;
     margin:0;
-    font-size: 32px;
+    font-size: 28px;
 }
-p{
-    padding: 20px;
+p.description_M{
+   margin: 10px 5px 0 5px;
 }
 img{
     width:160px;
