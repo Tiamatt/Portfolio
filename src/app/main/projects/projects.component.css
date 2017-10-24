@@ -1,0 +1,37 @@
+/* ------------------------ SECTION 3. project ------------------------------- */
+.section_M {
+    color: rgba(43, 34, 66, 1); 
+    background-color: #BDBDBD;
+  }
+  .placeForFixedNav{
+      background-color: rgba(225, 227, 228, 1);
+  }
+  .projectContainer_M{  
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari */
+    justify-content: center;   
+  }
+  .projectBox_M{
+    width: 280px;
+    height: 270px;
+    margin: 20px;
+    float:left;
+    background: #e1e3e4;
+    border-bottom: 5px solid rgba(43, 34, 66, 1); 
+    box-shadow: 0 0 20px #3E4245; 
+    cursor: pointer; 
+  }
+  .projectBox_M:hover{
+    box-shadow: 0 0 20px rgba(34, 62, 114, 1);
+    border-bottom: 5px solid rgba(34, 62, 114, 1);
+  }
+  .projectBox_M img{
+    width: 280px;
+    height: 230px;
+  }
+  .projectBox_M p{
+    font-size: 16px;
+    padding: 4px;
+  }

@@ -1,0 +1,17 @@
+.modal{
+     color: #000;
+}
+.modal-title{
+    font-weight: 700;
+}
+img{
+    width: 100%;
+}
+.modal-body p{
+    margin:0;
+    padding: 0;
+    text-align: left;
+    color: #000;
+    font-family: 'PT Sans Narrow', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}

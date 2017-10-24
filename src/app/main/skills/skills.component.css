@@ -1,10 +1,9 @@
 .placeForFixedNav{
     background-color: rgba(19, 35, 47, 0.9);
 }
-
 .section_M {
     color: rgba(38, 43, 47, 1);
-    background-color: #e1e3e4;
+    background-color: rgba(225, 227, 228, 1);
   }
   .skillContainer_M{
       display: flex;
@@ -14,16 +13,18 @@
       justify-content: center;   
   }
   .skillBox_M{
-    width: 140px;
-    height: 140px;
-    float:left;
+    width: 130px;
+    height: 130px;
+    float: left;
     margin: 20px;
     background-color:rgba(214, 137, 16, 1); /*rgba(243, 54, 0, 0.8);*/
     border-radius: 5%;
-    border: 6px solid #CFD2D4;
+    border: 6px solid rgb(207, 210, 212);
     box-shadow: 0 0 20px black;
+    cursor: pointer;
     
     color: rgba(19, 35, 47, 1);
+    font-weight: 700;
     font-size: 24px;
     text-align: center;
     vertical-align: middle;
@@ -36,7 +37,6 @@
     line-height: normal;
   }
   .skillBox_M:hover{
-    cursor: pointer;
     background-color: rgba(243, 156, 18, 1);
   }
   
