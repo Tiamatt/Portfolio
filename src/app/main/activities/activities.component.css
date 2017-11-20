@@ -1,0 +1,36 @@
+.placeForFixedNav{
+    background-color: #464c5c;
+}
+
+.section_M {
+    color: #fff; 
+    background-color: #A63D40;
+  }
+  .activityContainer_M{  
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari */
+    justify-content: center;   
+  }
+  .activityBox_M{
+    width: 162px;/*img size always must be 160x160 */
+    height: 200px;
+    margin: 20px;
+    float:left;
+    background: #e1e3e4;
+    border: 1px solid #CFD2D4;
+    box-shadow: 0 0 20px #3E4245;  
+  }
+  .activityBox_M:hover{
+    opacity: 0.7;
+  }
+  .activityBox_M a{
+    text-decoration: none;
+    color: #3A4660;
+  }
+  .activityBox_M p{
+    font-size: 16px;
+    padding: 8px;
+  }
+  
