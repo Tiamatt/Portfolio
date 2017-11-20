@@ -1,12 +1,12 @@
 /* ------------------------ SECTION 3. project ------------------------------- */
 .section_M {
     color: rgba(43, 34, 66, 1); 
-    background-color: #BDBDBD;
+    background-color: rgba(189, 189, 189, 1);
   }
   .placeForFixedNav{
       background-color: rgba(225, 227, 228, 1);
   }
-  .projectContainer_M{  
+  .projectContainer_M{
     display: flex;
     display: -webkit-flex; /* Safari */
     flex-wrap: wrap;

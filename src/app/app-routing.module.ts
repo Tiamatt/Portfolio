@@ -3,13 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 
 // components
 import { MainComponent } from './main/main.component';
-import { ProjectListComponent } from './project-list/project-list.component';
 
 const appRoutes: Routes = [
-    { path: '', redirectTo: '/main', pathMatch: 'full' },
-    { path: 'main', component: MainComponent },
-    { path: 'projects', component: ProjectListComponent },
-    { path: '**', redirectTo: '/main' }
+    //{ path: '', redirectTo: '/main', pathMatch: 'full' },
+    { path: '', component: MainComponent },
+    { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({

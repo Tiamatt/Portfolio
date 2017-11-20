@@ -1,28 +1,47 @@
-# Portfolio
+# Portfolio app
+This [web application](https://tiamatt.github.io/Portfolio) is my developer portfolio page. As I'm working in a corporate environment and can't share my internal projects, here I'm presenting some of my hobby apps.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.2.
 
-## Development server
+## DEMO
+Live DEMO [here](https://tiamatt.github.io/Portfolio) </br>
+</br>
+![PortfolioScreenshot](/src/assets/projectImages/portfolio.png?raw=true "Portfolio screenshot")
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Features
+* Fully responsive design
+* Using Subject (Rx observable)
+* Shared components
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
-## Build
+## Built With
+* Angular 4 (TypeScript)
+* Angular CLI v1.4.2
+* Bootstrap v4.0.0-beta
+* Font Awesome v4.7.0
+* Google fonts
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Getting Started
+Note, this project requires Node.js installation.</br>
+Follow the steps:
+```bash
+# step 1. Go to Node.js official website and install it
+# check Node.js version (v8.5.0 or upper)
+$ node –v
+# check npm version (v5.3.0 or upper)
+$ npm -v
+# step 2. install Angular CLI
+$ npm install -g @angular/cli
+# check Angular CLI version (v1.4.2 or upper)
+$ ng -v
+# step 3. import project from github 
+$ git clone https://github.com/Tiamatt/Portfolio
+$ cd Portfolio
+# step 4. install the project's dependencies (node_modules folder)
+$ npm install
+# step 5. run application
+$ ng serve
+# navigate to `http://localhost:4200/`
+# app will automatically reload if you change any of the source files.
+```

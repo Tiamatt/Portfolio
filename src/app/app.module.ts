@@ -7,7 +7,6 @@ import { DataService } from './shared/services/data.service';
 // components
 import { AppComponent } from './app.component';
 import { MainComponent } from './main/main.component';
-import { ProjectListComponent } from './project-list/project-list.component';
 import { AboutComponent } from './main/about/about.component';
 import { ContactComponent } from './main/contact/contact.component';
 import { ExperienceComponent } from './main/experience/experience.component';
@@ -21,7 +20,6 @@ import { ProjectModalComponent } from './main/projects/project-modal/project-mod
   declarations: [
     AppComponent,
     MainComponent,
-    ProjectListComponent,
     AboutComponent,
     ContactComponent,
     ExperienceComponent,

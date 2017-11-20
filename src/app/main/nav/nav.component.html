@@ -6,7 +6,7 @@
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
       <a class="nav-item nav-link" *ngFor="let item of navArr" 
-      [href]="['/main#'+item]"
+      [href]="['./#'+item]"
       [ngClass]="{active: activeSection == item}" (click)="onSectionClick(item)" >{{item}}</a>
     </div>
   </div>
