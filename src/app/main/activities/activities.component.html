@@ -3,42 +3,13 @@
     <h3 class="sectionHeader_M">Activities</h3>
     <div class="activityContainer_M">
       
-      
-      <div class="activityBox_M">
-        <a href="https://www.freecodecamp.com/tiamatt" target="_blank">
-          <img src="https://res.cloudinary.com/tiamatt/image/upload/v1479077117/Portfolio/logo_freeCodeCamp.jpg" alt="activity">
-          <p>FreeCodeCamp</p>
+      <div *ngFor="let o of activities" class="activityBox_M">
+        <a [href]="o.websiteUrl" target="_blank">
+          <img [src]="o.imageSrc" alt="activity">
+          <p>{{o.name}}</p>
         </a>
-      </div>        
-     
-      <div class="activityBox_M">
-        <a href="https://codepen.io/Tiamatt/" target="_blank">
-          <img src="https://res.cloudinary.com/tiamatt/image/upload/v1479077231/Portfolio/logo_codePen.jpg" alt="activity">
-          <p>CodePen</p>
-        </a>
-      </div>     
-      
-      <div class="activityBox_M">
-        <a href="https://codefights.com/profile/samira_y" target="_blank">
-          <img src="https://res.cloudinary.com/tiamatt/image/upload/v1479077231/Portfolio/logo_codeFights.jpg" alt="activity">
-          <p>CodeFights</p>
-        </a>
-      </div>
-      
-      <div class="activityBox_M">
-        <a href="https://atlantacodecamp.com" target="_blank">
-          <img src="https://res.cloudinary.com/tiamatt/image/upload/v1479077231/Portfolio/logo_codeCampAtlanta.png" alt="activity">
-          <p>Atlanta Code Camp</p>
-        </a>
-      </div>
-      
-      <div class="activityBox_M">
-        <a href="#" target="_blank">
-          <img src="https://res.cloudinary.com/tiamatt/image/upload/v1479077968/Portfolio/certif_msSoftwareDevFundamentals.png" alt="activity">
-          <p>MS MTA Certification</p>
-        </a>
-      </div>
-      
+      </div>      
       <div style="clear: both;"></div>
+
     </div>
   </div>

@@ -30,7 +30,7 @@ export class SkillsComponent implements OnInit {
   onSelectSkill(_selectedSkill: SkillModel){
     this.selectedModalDialogSkill = {
       uniqueId: "skill" + _selectedSkill.id.toString(),
-      title: _selectedSkill.name
+      title: _selectedSkill.name + ' skill'
     };
     this.selectedSkillId = _selectedSkill.id;
     document.getElementById("openModalAlertForSkill").click();

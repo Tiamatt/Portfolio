@@ -1,9 +1,13 @@
 import { SkillModel } from "../models/skill.model";
 import { ProjectModel } from "../models/project.model";
+import { ExperienceModel } from "../../main/experience/experience.model";
+import { ActivityModel } from "../models/activity.model";
 
 export class DataService {
 
     constructor(){};
+
+    private nav: string[] = ['About', 'Skills', 'Projects', 'Experience', 'Activities', 'Contact'];
 
     private about: string = "I’m a Full Stack Developer with four years of experience in the full software development lifecycle – from concepts and requirements to deployment and support of web applications primarily using C#, .NET and MS SQL. Back in summer 2017 I became interested in Angular and fell in love with the great framework. I’m self-motivated and extremely passionate about web development in all its forms. Highly adaptable in quickly changing technical environments with strong organizational and analytical skills.";
 
@@ -129,8 +133,92 @@ export class DataService {
         }        
     ];
 
-    // get about
-    getAbout():string{
+    private experiences: ExperienceModel[] = [
+        {
+            id: 4,
+            title: 'Software Engineer at Assurant',
+            period: 'Sep 2015 - present, Assurant, Duluth, GA',
+            descriptions: [
+                'Developed multiple web app from scratch such as PTAdmin app that handles authorization of users/teams for a number of corporate desktop and web apps; LossDraft app that provides reports of insurance claims, etc.',
+                'Provided users with quality production support and customer service. Resolved production issues in a timely manner.',
+                'Maintained a web app for insurance auditing that permits auditors to evaluate customer service. Fully supported backend, frontend and SQL Server database in dev, model and production environments.',
+                'Developed multiple desktop applications that generate and email business reports and fill database tables with data on daily basis.'
+            ],
+            isRightSide: false
+        },
+        {
+            id: 3,
+            title: '.NET developer at Romantic LLC',
+            period: 'Dec 2013 – June 2015, Baku, Azerbaijan',
+            descriptions:[
+                'Developed Romantic Analytics web app from scratch with ASP.NET Web Forms. Presented all kinds of business reports. Applied customized access control for the application based on users’ privileges.',
+                'Developed Win Forms apps with CRUD functionality and sales indices calculation.',
+                'Followed various development processes under the guidance of the architecture staff.',
+                'Worked with SQL Server databases: extracted, transformed and manipulated various types of data.',
+                'Developed console apps that generated and emailed corporate reports daily.'
+            ],
+            isRightSide: true
+        },
+        {
+            id: 2,
+            title: 'Business analyst at Romantic LLC',
+            period: 'Sept 2012 – Dec 2013, Baku, Azerbaijan',
+            descriptions: [
+                'Built, tested and maintained database queries, stored procedures, functions and views with MS SQL Server.',
+                'Created OLAP cubes and designed MDX queries with SQL Server Analysis Services (SSAS).',
+                'Built data mining models with SQL Server Data Tools (SSDT).',
+                'Deployed and supported standard reports, dashboards and data visualizations.'
+            ],
+            isRightSide: false
+        },
+        {
+            id: 1,
+            title: 'Junior Macroeconomic Analyst at Institute for Economic Reforms',
+            period: 'July 2008 – Sept 2008, Baku, Azerbaijan',
+            descriptions: [
+                'Monitored and prepared analytical reports of GDP growth and inflation.',
+                'Collected and maintained data based on consumer price index.',
+                'Developed econometrics/statistical models (various types of regression models).',
+                'Created and presented research documents.'
+            ],
+            isRightSide: true
+        }
+    ];
+
+    private activities: ActivityModel[] = [
+        {
+            id: 1,
+            name: 'MS MTA Certification',
+            imageSrc: './assets/activity-images/ms-mta-certification.png',
+            websiteUrl: 'https://www.microsoft.com/en-us/learning/exam-98-361.aspx'
+        },
+        {
+            id: 2,
+            name: 'CodeFights',
+            imageSrc: './assets/activity-images/code-fights.png',
+            websiteUrl: 'https://codefights.com/profile/samira_y'
+        },
+        {
+            id: 3,
+            name: 'FreeCodeCamp',
+            imageSrc: './assets/activity-images/free-code-camp.png',
+            websiteUrl: 'https://www.freecodecamp.com/tiamatt'
+        },
+        {
+            id: 4,
+            name: 'Atlanta Code Camp',
+            imageSrc: './assets/activity-images/atlanta-code-camp.png',
+            websiteUrl: 'https://atlantacodecamp.com'
+        }
+    ];
+
+    // get all navs
+    getNav(): string[]{
+        return this.nav;
+    }
+
+    // get all abouts
+    getAbout(): string{
         return this.about;
     }
 
@@ -200,4 +288,14 @@ export class DataService {
         return this.projects.find(x => x.id == _id);
     }
 
+    // get all experiences 
+    getExperiences(): ExperienceModel[]{
+        return this.experiences;
+    }
+
+    // get all activities 
+    getActivities(): ActivityModel[]{
+        return this.activities;
+    }
+    
 }

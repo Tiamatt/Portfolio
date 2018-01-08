@@ -2,8 +2,8 @@
     background-color: #464c5c;
 }
 .section_M {
-    color: #fff; 
-    background-color: #A63D40;
+  color: rgba(38, 43, 47, 1);
+  background-color: rgba(225, 227, 228, 1);
   }
   .activityContainer_M{  
     display: flex;
@@ -22,7 +22,7 @@
     box-shadow: 0 0 20px #3E4245;  
   }
   .activityBox_M:hover{
-    opacity: 0.7;
+    border: 1px solid #818181;
   }
   .activityBox_M a{
     text-decoration: none;
@@ -31,5 +31,10 @@
   .activityBox_M p{
     font-size: 16px;
     padding: 8px;
+  }
+  .activityBox_M img{
+    width: 160px;
+    height: 160px;
+
   }
   

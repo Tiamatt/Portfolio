@@ -5,7 +5,7 @@ This [web application](https://tiamatt.github.io/Portfolio) is my developer port
 ## DEMO
 Live DEMO [here](https://tiamatt.github.io/Portfolio) </br>
 </br>
-![PortfolioScreenshot](/src/assets/projectImages/portfolio.png?raw=true "Portfolio screenshot")
+![PortfolioScreenshot](/src/assets/project-images/portfolio.png?raw=true "Portfolio screenshot")
 
 
 ## Features

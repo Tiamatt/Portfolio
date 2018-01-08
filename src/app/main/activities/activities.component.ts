@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivityModel } from '../../shared/models/activity.model';
+import { DataService } from '../../shared/services/data.service';
 
 @Component({
   selector: 'app-activities',
@@ -6,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./activities.component.css','../../shared/styles/general.css']
 })
 export class ActivitiesComponent implements OnInit {
+  activities: ActivityModel[] = [];
 
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
+    this.activities = this.dataService.getActivities();
   }
 
 }

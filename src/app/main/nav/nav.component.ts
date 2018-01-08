@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../../shared/services/data.service';
 
 @Component({
   selector: 'app-nav',
@@ -6,16 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav.component.css']
 })
 export class NavComponent implements OnInit {
-  navArr : string[] = ['About', 'Skills', 'Projects', 'Experience', 'Activities', 'Contact'];
+  navArr : string[] = [];
   activeSection : string;
   
-  constructor() { }
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.initialValues();
-  }
-
-  initialValues(){
+    this.navArr = this.dataService.getNav();
     this.activeSection =  this.navArr[0];
   }
 
