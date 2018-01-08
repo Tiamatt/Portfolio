@@ -1,0 +1,29 @@
+.placeForFixedNav{
+  background-color: #A63D40;
+}
+
+.section_M {
+    color: rgba(26, 177, 136, 1);
+    background-color: #0D0D0D;
+  }
+
+#section6 {
+    color: #3FBFB2; 
+    background-color: #0D0D0D;
+    padding: 0;
+    height: 55px;  
+    border-color: #080808;
+    border-width: 0 0 1px;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+     opacity: 0.7; 
+  }
+  .contactIcon_M{
+    line-height: 55px;
+    font-size:36px;
+    color:#3FBFB2;
+    margin: 0 10px 0 0;
+  }

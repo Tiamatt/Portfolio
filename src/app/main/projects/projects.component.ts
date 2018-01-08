@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
 import { DataService } from '../../shared/services/data.service';
-import { IProject } from '../../shared/models/IProject.model';
+import { ProjectModel } from '../../shared/models/project.model';
+import { ModalDialogModel } from '../../shared/components/modal-dialog/modal-dialog.model';
 
 @Component({
   selector: 'app-projects',
@@ -9,17 +9,31 @@ import { IProject } from '../../shared/models/IProject.model';
   styleUrls: ['./projects.component.css', '../../shared/styles/general.css']
 })
 export class ProjectsComponent implements OnInit {
-  projectList: IProject[] = [];
-  constructor(
-    private router: Router, 
-    private dataService: DataService
-  ) { }
+  projects: ProjectModel[] = [];
+  selectedModalDialogProject: ModalDialogModel;
+  selectedProjectId: number;
+
+  constructor(private dataService: DataService) { }
 
   ngOnInit() {
-    this.projectList = this.dataService.getProjectList();
+    this.projects= this.dataService.getProjects();
+    this.selectedModalDialogProject = {
+      uniqueId: "testProject",
+      title:"testProject"
+    };
   }
-  onSelect(_id: number){
-      document.getElementById("openModalButton" + _id).click();
+
+  /* -------------------  PRIVATE METHODS ---------------------- */
+  //
+
+  /* -------------------  EVENTS ---------------------- */
+  onSelectProject(_selectedProject: ProjectModel){
+    this.selectedModalDialogProject = {
+      uniqueId: 'project' + _selectedProject.id.toString(),
+      title: _selectedProject.name + ' project'
+    };
+    this.selectedProjectId = _selectedProject.id;
+    document.getElementById("openModalAlertForProject").click();
   }
   
 }

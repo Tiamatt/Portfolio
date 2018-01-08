@@ -1,0 +1,11 @@
+.modal-header{
+    background-color: rgb(207, 210, 212);
+    padding: 10px 15px;
+}
+.modal-title{
+    font-family: 'Amaranth', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: rgba(43, 34, 66, 1);
+    margin:0;
+}

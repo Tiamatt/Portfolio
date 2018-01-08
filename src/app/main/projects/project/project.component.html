@@ -1,0 +1,13 @@
+<div *ngIf="project">
+    <img [src]="project.imageSrc" [alt]="project.name">
+    <p>
+      <b>Website: </b>
+      <a target="_blank" [href]="project.websiteUrl">{{project.websiteUrl}}</a>
+    </p>
+    <p>
+      <b>GitHub: </b>
+      <a target="_blank" [href]="project.gitUrl">{{project.gitUrl}}</a>
+    </p>
+    <p>{{project.name}}</p>
+    <p>{{project.descriptionHtml}}</p>
+</div>

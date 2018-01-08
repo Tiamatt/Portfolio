@@ -11,6 +11,7 @@
     list-style: none;
     padding: 20px 0 20px;
     position: relative;
+    margin-bottom: 0;
   }
   .timeline:before {
     top: 0;
@@ -113,7 +114,7 @@
     border-top-left-radius: 50%;
     border-bottom-right-radius: 50%;
     border-bottom-left-radius: 50%;
-    z-index: 99999;
+    z-index: 1;
   }
   /** timeline content **/
   .tl-heading h4 {

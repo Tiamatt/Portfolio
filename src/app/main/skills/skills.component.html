@@ -1,43 +1,23 @@
 <div id="Skills" class="section_M">
+
+    <!-- Header -->
     <div class="placeForFixedNav"></div>
     <h3 class="sectionHeader_M">Skills</h3>
+
+    <!-- Skill boxes -->
     <div class="skillContainer_M">
-        <div class="skillBox_M">
-            <p>ASP.NET Core</p>
+        <div class="skillBox_M" *ngFor="let o of skills" (click)="onSelectSkill(o)">
+            <p>{{o.name}}</p>
         </div>
-        <div class="skillBox_M">
-            <p>C#</p>
-        </div>
-        <div class="skillBox_M">
-            <p>MS SQL Server</p>
-        </div>
-        <div class="skillBox_M">
-            <p>LINQ</p>
-        </div>
-        <div class="skillBox_M">
-            <p>JavaScript</p>
-        </div>
-        <div class="skillBox_M">
-            <p>jQuery</p>
-        </div>
-        <div class="skillBox_M">
-            <p>AJAX</p>
-        </div>      
-        <div class="skillBox_M">
-            <p>JSON</p>
-        </div>      
-        <div class="skillBox_M">
-            <p>HTML5</p>
-        </div>
-        <div class="skillBox_M">
-            <p>CSS3</p>
-        </div>
-        <div class="skillBox_M">
-            <p>Bootstrap</p>
-        </div>      
-        <div class="skillBox_M">
-            <p>TFS</p>
-        </div>    
         <div style="clear: both;"></div>
     </div>
+
+    <!-- Modal dialog -->
+    <app-modal-dialog [input]="selectedModalDialogSkill">
+        <div #modalDialogBody>
+            <app-skill [skillIdInput]="selectedSkillId"></app-skill>
+        </div>
+    </app-modal-dialog>
+    <button id="openModalAlertForSkill" hidden data-toggle="modal" [attr.data-target]="'#ModalAlert'+selectedModalDialogSkill.uniqueId">Open Modal Alert (hidden)</button>
+
 </div>

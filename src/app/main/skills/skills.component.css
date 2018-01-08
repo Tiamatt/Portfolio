@@ -17,6 +17,7 @@
     height: 130px;
     float: left;
     margin: 20px;
+    padding: 0 6px;
     background-color:rgba(214, 137, 16, 1); /*rgba(243, 54, 0, 0.8);*/
     border-radius: 5%;
     border: 6px solid rgb(207, 210, 212);

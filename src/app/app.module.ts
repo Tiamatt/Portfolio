@@ -14,7 +14,9 @@ import { NavComponent } from './main/nav/nav.component';
 import { ProjectsComponent } from './main/projects/projects.component';
 import { ActivitiesComponent } from './main/activities/activities.component';
 import { SkillsComponent } from './main/skills/skills.component';
-import { ProjectModalComponent } from './main/projects/project-modal/project-modal.component';
+import { ModalDialogComponent } from './shared/components/modal-dialog/modal-dialog.component';
+import { SkillComponent } from './main/skills/skill/skill.component';
+import { ProjectComponent } from './main/projects/project/project.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { ProjectModalComponent } from './main/projects/project-modal/project-mod
     ProjectsComponent,
     ActivitiesComponent,
     SkillsComponent,
-    ProjectModalComponent
+    ModalDialogComponent,
+    SkillComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

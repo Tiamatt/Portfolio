@@ -1,15 +1,23 @@
 <div id="Projects" class="section_M">
-    <div class="placeForFixedNav"></div>
-    <h3 class="sectionHeader_M">Projects</h3>
-    <div class="projectContainer_M clearfix">      
-      <div class="projectBox_M" *ngFor="let item of projectList" (click)="onSelect(item.id)">
-          <img [src]="item.imageLink" [alt]="item.name">
-          <p>{{item.name}} <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></p>
-
-           <!-- Modal dialog -->
-          <app-project-modal [project]="item"></app-project-modal>
-          <button [id]="'openModalButton'+item.id" hidden data-toggle="modal" [attr.data-target]="'#projectModal'+item.id">Open Modal (hidden)</button>
-      </div>
-    </div>
   
+  <!-- Header -->
+  <div class="placeForFixedNav"></div>
+  <h3 class="sectionHeader_M">Projects</h3>
+
+  <!-- Project boxes -->
+  <div class="projectContainer_M clearfix">      
+    <div class="projectBox_M" *ngFor="let o of projects" (click)="onSelectProject(o)">
+      <img [src]="o.imageSrc" [alt]="o.name">
+      <p>{{o.name}} <i class="fa fa-hand-pointer-o" aria-hidden="true"></i></p>
+    </div>
   </div>
+
+  <!-- Modal dialog -->
+  <app-modal-dialog [input]="selectedModalDialogProject">
+      <div #modalDialogBody>
+        <app-project [projectIdInput]="selectedProjectId"></app-project>
+      </div>
+  </app-modal-dialog>
+  <button id="openModalAlertForProject" hidden data-toggle="modal" [attr.data-target]="'#ModalAlert'+selectedModalDialogProject.uniqueId">Open Modal Alert (hidden)</button>
+
+</div>

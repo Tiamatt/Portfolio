@@ -1,0 +1,27 @@
+<div *ngIf="skill">
+  <img [src]="skill.imageSrc" class="rounded float-left" [alt]="skill.name">
+  <p [innerHTML]="skill.description"></p>
+  
+  <!-- list of projects -->
+  <div *ngIf="skill.projects">
+    <p class="small-title_M">My projects built with {{skill.name}}:</p>
+    <ul>
+      <li *ngFor="let o of skill.projects">
+        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        <a target="_blank" [href]="o.websiteUrl">{{o.name}}</a>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- list of features -->
+  <div *ngIf="skill.features">
+    <p class="small-title_M">I have experience with following features:</p>
+    <ul>
+      <li *ngFor="let o of skill.features">
+        <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+        <span>{{o}}</span>
+      </li>
+    </ul>
+  </div>
+  
+</div>
