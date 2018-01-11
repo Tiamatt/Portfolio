@@ -15,10 +15,21 @@ export class DataService {
         {
             id: 1,
             name: "Weather",
-            descriptionHtml: "Under construction",
+            descriptionHtml: "I built this project at the time I started studying Angular. Here I applied my knowledge to create components; to use a service with BehaviorSubject to subscribe and listen to variables changes; to put app-routing data into separate (feature) module.",
             imageSrc: "./assets/project-images/weather.png",
             websiteUrl: "https://tiamatt.github.io/Weather/",
-            gitUrl: "https://github.com/Tiamatt/Weather/"
+            gitUrl: "https://github.com/Tiamatt/Weather/",
+            technologies: [
+                'Angular 4 (TypeScript)',
+                'Angular CLI v1.2.2',
+                'Node.js v8.5.0 and npm v5.3.0',
+                'ng4-geoautocomplete (for location autocomplete)',
+                'Google map API (for location autocomplete)',
+                'OpenWeatherMap API (for weather icons)',
+                'IP Address API (for user’s current location)',
+                'Bootstrap v3.3.7',
+                'Google fonts',
+                'Weather Icons v1.3.2']
         },
         {
             id: 2,
@@ -26,7 +37,8 @@ export class DataService {
             descriptionHtml: "Under construction",
             imageSrc: "./assets/project-images/portfolio.png",
             websiteUrl: "https://tiamatt.github.io/Portfolio/",
-            gitUrl: "https://github.com/Tiamatt/Portfolio/"
+            gitUrl: "https://github.com/Tiamatt/Portfolio/",
+            technologies: []
         },
         {
             id: 3,
@@ -34,7 +46,8 @@ export class DataService {
             descriptionHtml: "Under construction",
             imageSrc: "./assets/project-images/papa-johns-clone.png",
             websiteUrl: "https://tiamatt.github.io/PapaJohnsClone/",
-            gitUrl: "https://github.com/Tiamatt/PapaJohnsClone/"
+            gitUrl: "https://github.com/Tiamatt/PapaJohnsClone/",
+            technologies: []
         },
         {
             id: 4,
@@ -42,7 +55,8 @@ export class DataService {
             descriptionHtml: "Under construction",
             imageSrc: "./assets/project-images/analytics.png",
             websiteUrl: "https://tiamatt.github.io/Analytics/",
-            gitUrl: "https://github.com/Tiamatt/Analytics/"
+            gitUrl: "https://github.com/Tiamatt/Analytics/",
+            technologies: []
         }
     ];
 
@@ -109,6 +123,38 @@ export class DataService {
         },
         {
             id: 8, 
+            name: "Entity Framework", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/entity-framework.jpg",
+            features: null,
+            projects: null
+        },
+        {
+            id: 9, 
+            name: "ADO.NET", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/ado-net.jpg",
+            features: null,
+            projects: null
+        },
+        {
+            id: 10, 
+            name: "LINQ", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/linq.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 11, 
+            name: "JavaScript", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/javascript.jpg",
+            features: null,
+            projects: null
+        },        
+        {
+            id: 12, 
             name: "HTML5", 
             description: "Under construction",
             imageSrc: "./assets/skill-images/html-five.jpg",
@@ -116,7 +162,7 @@ export class DataService {
             projects: null
         },
         {
-            id: 9, 
+            id: 13, 
             name: "CSS3", 
             description: "Under construction",
             imageSrc: "./assets/skill-images/css-three.jpg",
@@ -124,13 +170,101 @@ export class DataService {
             projects: null
         },
         {
-            id: 10, 
+            id: 14, 
             name: "Bootstrap", 
             description: "Under construction",
             imageSrc: "./assets/skill-images/bootstrap.png",
             features: null,
             projects: null
-        }        
+        },
+        {
+            id: 15, 
+            name: "jQuery", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/jquery.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 16, 
+            name: "AJAX", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/ajax.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 17, 
+            name: "JSON", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/json.jpg",
+            features: null,
+            projects: null
+        },
+        {
+            id: 18, 
+            name: "XML", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/xml.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 19, 
+            name: "MS SQL Server", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/ms-sql-server.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 20, 
+            name: "MySql", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/mysql.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 21, 
+            name: "Firebase", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/firebase.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 22, 
+            name: "TFS", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/tfs.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 23, 
+            name: "GitHub", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/git-hub.gif",
+            features: null,
+            projects: null
+        },
+        {
+            id: 24, 
+            name: "Visual Studio", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/visual-studio.png",
+            features: null,
+            projects: null
+        },
+        {
+            id: 25, 
+            name: "VS Code", 
+            description: "Under construction",
+            imageSrc: "./assets/skill-images/vs-code.png",
+            features: null,
+            projects: null
+        }
     ];
 
     private experiences: ExperienceModel[] = [
@@ -255,7 +389,8 @@ export class DataService {
                 descriptionHtml: null,
                 imageSrc: o.imageSrc,
                 websiteUrl: null,
-                gitUrl: null
+                gitUrl: null,
+                technologies: null
             });
         }
         return result;     
@@ -276,7 +411,8 @@ export class DataService {
                     descriptionHtml: null,
                     imageSrc: null,
                     websiteUrl: o.websiteUrl,
-                    gitUrl: null
+                    gitUrl: null,
+                    technologies: null
                 });
             }
         }

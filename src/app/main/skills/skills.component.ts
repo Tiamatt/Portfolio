@@ -32,8 +32,9 @@ export class SkillsComponent implements OnInit {
       uniqueId: "skill" + _selectedSkill.id.toString(),
       title: _selectedSkill.name + ' skill'
     };
-    this.selectedSkillId = _selectedSkill.id;
-    document.getElementById("openModalAlertForSkill").click();
+    // kali!!!
+    //this.selectedSkillId = _selectedSkill.id;
+    //document.getElementById("openModalAlertForSkill").click();
   }
 
 

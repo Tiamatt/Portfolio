@@ -5,6 +5,9 @@
   color: #3FBFB2;
   background-color: rgba(19, 35, 47, 0.9);
 }
+.info_M{
+  padding: 0 0 12px 0;
+}
   a{
     text-decoration: none;
   }

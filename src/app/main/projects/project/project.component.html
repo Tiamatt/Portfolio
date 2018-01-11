@@ -1,13 +1,28 @@
-<div *ngIf="project">
-    <img [src]="project.imageSrc" [alt]="project.name">
-    <p>
-      <b>Website: </b>
-      <a target="_blank" [href]="project.websiteUrl">{{project.websiteUrl}}</a>
-    </p>
-    <p>
-      <b>GitHub: </b>
-      <a target="_blank" [href]="project.gitUrl">{{project.gitUrl}}</a>
-    </p>
-    <p>{{project.name}}</p>
-    <p>{{project.descriptionHtml}}</p>
+<div *ngIf="project" class="project_M">
+
+  <img [src]="project.imageSrc" [alt]="project.name">
+
+  <p class="project-title_M">Description</p>
+  <p>{{project.descriptionHtml}}</p>
+
+  <p class="project-title_M">Technologies</p>
+  <ul>
+    <li *ngFor="let o of project.technologies">
+      <p>{{o}}</p>
+    </li>
+  </ul>
+
+  <a target="_blank" [href]="project.websiteUrl">
+    <button type="button" class="btn btn-info">
+      <i class="fa fa-eye" aria-hidden="true"></i>         
+      <span>Visit Website</span>
+    </button>
+  </a>
+  <a target="_blank" [href]="project.gitUrl">
+    <button type="button" class="btn btn-info">
+      <i class="fa fa-github" aria-hidden="true"></i>          
+      <span>Visit GitHub</span>
+    </button>
+  </a>
+    
 </div>

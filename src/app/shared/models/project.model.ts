@@ -5,4 +5,5 @@ export class ProjectModel{
     imageSrc: string;
     websiteUrl: string;
     gitUrl: string;
+    technologies: string[];
 }
