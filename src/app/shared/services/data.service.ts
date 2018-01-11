@@ -336,7 +336,7 @@ export class DataService {
             id: 3,
             name: 'FreeCodeCamp',
             imageSrc: './assets/activity-images/free-code-camp.png',
-            websiteUrl: 'https://www.freecodecamp.com/tiamatt'
+            websiteUrl: 'https://www.freecodecamp.org/tiamatt/front-end-certification'
         },
         {
             id: 4,
