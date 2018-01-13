@@ -10,7 +10,8 @@ h3{
     font-size: 28px;
 }
 p.description_M{
-   margin: 10px 5px 0 5px;
+   margin: 10px auto;
+   max-width: 720px;
 }
 img{
     width:160px;

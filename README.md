@@ -15,8 +15,10 @@ Live DEMO [here](https://tiamatt.github.io/Portfolio) </br>
 
 
 ## Built With
-* Angular 4 (TypeScript)
+* Angular 4 
+* TypeScript
 * Angular CLI v1.4.2
+* Node.js v8.5.0 and npm v5.3.0
 * Bootstrap v4.0.0-beta
 * Font Awesome v4.7.0
 * Google fonts

@@ -9,7 +9,7 @@ export class DataService {
 
     private nav: string[] = ['About', 'Skills', 'Projects', 'Experience', 'Activities', 'Contact'];
 
-    private about: string = "I’m a Full Stack Developer with four years of experience in the full software development lifecycle – from concepts and requirements to deployment and support of web applications primarily using C#, .NET and MS SQL. Back in summer 2017 I became interested in Angular and fell in love with the great framework. I’m self-motivated and extremely passionate about web development in all its forms. Highly adaptable in quickly changing technical environments with strong organizational and analytical skills.";
+    private about: string = "I’m a Full Stack Developer with four years of experience in the full software development lifecycle – from concepts and requirements to deployment and support of web applications primarily using C#, .NET and MS SQL. Back in summer 2017 I became interested in Angular and fell in love with the great framework. I’m self-motivated and extremely passionate about web development in all its forms.";
 
     private projects: ProjectModel[] = [
         {
@@ -20,7 +20,8 @@ export class DataService {
             websiteUrl: "https://tiamatt.github.io/Weather/",
             gitUrl: "https://github.com/Tiamatt/Weather/",
             technologies: [
-                'Angular 4 (TypeScript)',
+                'Angular 4',
+                'TypeScript',
                 'Angular CLI v1.2.2',
                 'Node.js v8.5.0 and npm v5.3.0',
                 'ng4-geoautocomplete (for location autocomplete)',
@@ -34,29 +35,62 @@ export class DataService {
         {
             id: 2,
             name: "Portfolio",
-            descriptionHtml: "Under construction",
+            descriptionHtml: "As I'm working in a corporate environment and can't share my internal projects, here I'm presenting some of my hobby apps.",
             imageSrc: "./assets/project-images/portfolio.png",
             websiteUrl: "https://tiamatt.github.io/Portfolio/",
             gitUrl: "https://github.com/Tiamatt/Portfolio/",
-            technologies: []
+            technologies: [
+                'Angular 4',
+                'TypeScript',
+                'Angular CLI v1.4.2',
+                'Node.js v8.5.0 and npm v5.3.0',
+                'Bootstrap v4.0.0-beta',
+                'Font Awesome v4.7.0',
+                'Google fonts']
         },
         {
             id: 3,
             name: "PapaJohnsClone",
-            descriptionHtml: "Under construction",
+            descriptionHtml: "This web app is a light version of papajohns.com re-written on Angular (frontend) and .NET Core (backend) for studying purposes. User can view items by categories, add selected items to shopping cart, customize pizza and redirect to shopping cart.",
             imageSrc: "./assets/project-images/papa-johns-clone.png",
             websiteUrl: "https://tiamatt.github.io/PapaJohnsClone/",
             gitUrl: "https://github.com/Tiamatt/PapaJohnsClone/",
-            technologies: []
+            technologies: [
+                'Angular 4',
+                'TypeScript',
+                'Angular CLI v1.4.2',
+                'Node.js v8.5.0 and npm v5.3.0',
+                'C#',
+                '.NET Core 2.0',
+                'ASP.NET Web API',
+                'Entity Framework Core 2.0',
+                'MS SQL Server v17.1',
+                'Visual Studio 2017',
+                'Bootstrap v4.0.0-beta',
+                'Font Awesome v4.7.0',
+                'Google fonts']
         },
         {
             id: 4,
             name: "Analytics",
-            descriptionHtml: "Under construction",
+            descriptionHtml: "This web app is a custom admin panel built with Angular and .NET Core. User can create/read/update/delete items, filter them by criteria. This  project is currently in progress.",
             imageSrc: "./assets/project-images/analytics.png",
             websiteUrl: "https://tiamatt.github.io/Analytics/",
             gitUrl: "https://github.com/Tiamatt/Analytics/",
-            technologies: []
+            technologies: [
+                'Angular 4',
+                'TypeScript',
+                'Angular CLI v1.4.2',
+                'Node.js v8.5.0 and npm v5.3.0',
+                'C#',
+                '.NET Core 2.0',
+                'ASP.NET Web API',
+                'Entity Framework Core 2.0',
+                'MS SQL Server v17.1',
+                'Visual Studio 2017',
+                'Bootstrap v4.0.0-beta',
+                'Font Awesome v4.7.0',
+                'Google fonts']
         }
     ];
 
