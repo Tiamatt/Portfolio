@@ -343,51 +343,65 @@ export class DataService {
 
     private experiences: ExperienceModel[] = [
         {
-            id: 4,
-            title: 'Software Engineer at Assurant',
-            period: 'Sep 2015 - present, Assurant, Duluth, GA',
+            id: 5,
+            title: 'Full Stack Developer at NovoLogic Inc.',
+            period: 'Feb 2018 - present (Lawrenceville, GA)',
             descriptions: [
-                'Developed multiple web app from scratch such as PTAdmin app that handles authorization of users/teams for a number of corporate desktop and web apps; LossDraft app that provides reports of insurance claims, etc.',
+                'Developed fully responsive sophisticated web application (using Angular/PHP) for such clients as Chick-fil-A, Panera Bread, Zaxby’s, etc.',
+                'Created pages with data visualization using Angular charts, graphs and gauges.',
+                'Built reusable custom pipes, custom directives and custom filters.',
+                'Managed permissions with Access Control Lists (ACL).',
+                'Implemented Continuous Development (via Jira, Git, Docker),  Continuous Integration (via Jenkins, FlyWay) and Continuous Deployment (to AWS). Also practiced the basics of Continuous Testing (via Jasmine & Karma, Selenium).',
+                'Participated in daily scrum standups, pair programming, code refactoring and proactive knowledge sharing to learn new technologies and methodologies.',   
+            ],
+            isRightSide: true
+        },
+        {
+            id: 4,
+            title: 'Software Engineer at Assurant Inc.',
+            period: 'Sep 2015 - Feb 2018 (Duluth, GA)',
+            descriptions: [
+                'Developed multiple ASP.NET web applications from scratch and fully independently within the global insurance industry such as custom reports of insurance claims. Fully supported backend, frontend and SQL Server database in dev, model and production environments.',
+                'Maintained a complex web application as part of a team for insurance auditing department to provide customer service evaluation.',
+                'Developed multiple desktop applications that generate and email business reports on daily basis.',
                 'Provided users with quality production support and customer service. Resolved production issues in a timely manner.',
-                'Maintained a web app for insurance auditing that permits auditors to evaluate customer service. Fully supported backend, frontend and SQL Server database in dev, model and production environments.',
-                'Developed multiple desktop applications that generate and email business reports and fill database tables with data on daily basis.'
             ],
             isRightSide: false
         },
         {
             id: 3,
             title: '.NET developer at Romantic LLC',
-            period: 'Dec 2013 – June 2015, Baku, Azerbaijan',
+            period: 'Dec 2013 – June 2015 (Baku, Azerbaijan)',
             descriptions:[
-                'Developed Romantic Analytics web app from scratch with ASP.NET Web Forms. Presented all kinds of business reports. Applied customized access control for the application based on users’ privileges.',
-                'Developed Win Forms apps with CRUD functionality and sales indices calculation.',
+                'Developed Romantic Analytics web application from scratch with ASP.NET Web Forms. Presented all kinds of business reports. Applied customized access control for the application based on users’ privileges.',
+                'Developed WinForms applications with CRUD functionality and sales indices calculation.',
                 'Followed various development processes under the guidance of the architecture staff.',
                 'Worked with SQL Server databases: extracted, transformed and manipulated various types of data.',
-                'Developed console apps that generated and emailed corporate reports daily.'
+                'Developed console applications that generated and emailed corporate reports daily.',
             ],
             isRightSide: true
         },
         {
             id: 2,
             title: 'Business analyst at Romantic LLC',
-            period: 'Sept 2012 – Dec 2013, Baku, Azerbaijan',
+            period: 'Sep 2012 – Dec 2013 (Baku, Azerbaijan) ',
             descriptions: [
-                'Built, tested and maintained database queries, stored procedures, functions and views with MS SQL Server.',
+                'Built, tested and maintained MS SQL database queries, stored procedures, functions and views.',
                 'Created OLAP cubes and designed MDX queries with SQL Server Analysis Services (SSAS).',
                 'Built data mining models with SQL Server Data Tools (SSDT).',
-                'Deployed and supported standard reports, dashboards and data visualizations.'
+                'Deployed and supported standard reports, dashboards and data visualizations.',
             ],
             isRightSide: false
         },
         {
             id: 1,
             title: 'Junior Macroeconomic Analyst at Institute for Economic Reforms',
-            period: 'July 2008 – Sept 2008, Baku, Azerbaijan',
+            period: 'July 2008 – Sep 2008 (Baku, Azerbaijan)',
             descriptions: [
                 'Monitored and prepared analytical reports of GDP growth and inflation.',
                 'Collected and maintained data based on consumer price index.',
                 'Developed econometrics/statistical models (various types of regression models).',
-                'Created and presented research documents.'
+                'Created and presented research documents.',
             ],
             isRightSide: true
         }
