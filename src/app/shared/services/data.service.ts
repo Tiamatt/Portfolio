@@ -412,7 +412,7 @@ export class DataService {
             id: 1,
             name: 'MS MTA Certification',
             imageSrc: './assets/activity-images/ms-mta-certification.png',
-            websiteUrl: 'https://www.microsoft.com/en-us/learning/exam-98-361.aspx'
+            websiteUrl: 'https://github.com/Tiamatt/Resume', // 'https://www.microsoft.com/en-us/learning/exam-98-361.aspx'
         },
         {
             id: 2,
