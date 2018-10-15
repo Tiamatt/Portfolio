@@ -10,7 +10,7 @@ export class DataService {
 
     private nav: string[] = ['About', 'Skills', 'Projects', 'Experience', 'Activities', 'Contact'];
 
-    private about: string = "I’m a Full Stack Developer with four years of experience in the full software development lifecycle – from concepts and requirements to deployment and support of web applications primarily using C#, .NET and MS SQL. Back in summer 2017 I became interested in Angular and fell in love with the great framework. I’m self-motivated and extremely passionate about web development in all its forms.";
+    private about: string = "I am a Full Stack Developer with five years of experience in a full software development lifecycle – from concepts and requirements to deployment and support of web applications. Back in summer 2017 I became interested in Angular and fell in love with this great framework. I’m self-motivated and extremely passionate about web development in all its forms. Highly adaptable in quickly changing technical environments with strong organizational and analytical skills.";
 
     private projects: ProjectModel[] = [
         {
