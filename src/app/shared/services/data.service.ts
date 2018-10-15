@@ -54,7 +54,7 @@ export class DataService {
             name: "PapaJohnsClone",
             descriptionHtml: "This web app is a light version of papajohns.com re-written on Angular (frontend) and .NET Core (backend) for studying purposes. User can view items by categories, add selected items to shopping cart, customize pizza and redirect to shopping cart.",
             imageSrc: "./assets/project-images/papa-johns-clone.png",
-            websiteUrl: "https://tiamatt.github.io/PapaJohnsClone/",
+            websiteUrl: "http://papajohnsclone.herokuapp.com/",
             gitUrl: "https://github.com/Tiamatt/PapaJohnsClone/",
             technologies: [
                 'Angular 4',
@@ -71,28 +71,28 @@ export class DataService {
                 'Font Awesome v4.7.0',
                 'Google fonts']
         },
-        {
-            id: 4,
-            name: "Analytics",
-            descriptionHtml: "This web app is a custom admin panel built with Angular and .NET Core. User can create/read/update/delete items, filter them by criteria. This  project is currently in progress.",
-            imageSrc: "./assets/project-images/analytics.png",
-            websiteUrl: "https://tiamatt.github.io/Analytics/",
-            gitUrl: "https://github.com/Tiamatt/Analytics/",
-            technologies: [
-                'Angular 4',
-                'TypeScript',
-                'Angular CLI v1.4.2',
-                'Node.js v8.5.0 and npm v5.3.0',
-                'C#',
-                '.NET Core 2.0',
-                'ASP.NET Web API',
-                'Entity Framework Core 2.0',
-                'MS SQL Server v17.1',
-                'Visual Studio 2017',
-                'Bootstrap v4.0.0-beta',
-                'Font Awesome v4.7.0',
-                'Google fonts']
-        }
+        // {
+        //     id: 4,
+        //     name: "Analytics",
+        //     descriptionHtml: "This web app is a custom admin panel built with Angular and .NET Core. User can create/read/update/delete items, filter them by criteria. This  project is currently in progress.",
+        //     imageSrc: "./assets/project-images/analytics.png",
+        //     websiteUrl: "https://tiamatt.github.io/Analytics/",
+        //     gitUrl: "https://github.com/Tiamatt/Analytics/",
+        //     technologies: [
+        //         'Angular 4',
+        //         'TypeScript',
+        //         'Angular CLI v1.4.2',
+        //         'Node.js v8.5.0 and npm v5.3.0',
+        //         'C#',
+        //         '.NET Core 2.0',
+        //         'ASP.NET Web API',
+        //         'Entity Framework Core 2.0',
+        //         'MS SQL Server v17.1',
+        //         'Visual Studio 2017',
+        //         'Bootstrap v4.0.0-beta',
+        //         'Font Awesome v4.7.0',
+        //         'Google fonts']
+        // }
     ];
 
     private skills: SkillModel[] = [
