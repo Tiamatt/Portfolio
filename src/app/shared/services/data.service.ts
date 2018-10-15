@@ -2,6 +2,7 @@ import { SkillModel } from "../models/skill.model";
 import { ProjectModel } from "../models/project.model";
 import { ExperienceModel } from "../../main/experience/experience.model";
 import { ActivityModel } from "../models/activity.model";
+import { TechnicalSkillModel } from "../models/technical-skill.model";
 
 export class DataService {
 
@@ -301,6 +302,45 @@ export class DataService {
         }
     ];
 
+    private technicalSkills: TechnicalSkillModel[] = [
+        {
+            group: 'Angular',
+            description: 'Angular (2/4/5/6), TypeScript, Angular CLI, Jasmine & Karma',
+        },
+        {
+            group: '.NET',
+            description: '.NET (Core 2.x, Framework 4.x), C#, ASP.NET Web API (RESTful web services), ASP.NET MVC 5, ASP.NET Web Forms, Entity Framework, ADO.NET, LINQ, Azure',
+        },
+        {
+            group:'Other frontend',
+            description: 'JavaScript (ES5/ES6), HTML5, CSS3/SCSS, Bootstrap (3.x/4.x), jQuery, React (basics), AJAX, JSON, XML',
+        },
+        {
+            group: 'Other backend',
+            description: 'PHP, Phalcon Framework',
+        },
+        {
+            group: 'Databases',
+            description: 'MS SQL Server, MySql, Firebase',
+        },
+        {
+            group: 'Version controls',
+            description: 'Team Foundation Server (TFS), Git/GitHub',
+        },
+        {
+            group: 'IDEs',
+            description: 'Visual Studio, Visual Studio Code, PhpStorm',
+        },
+        {
+            group: 'DevOps (familiar)',
+            description: 'Jenkins, Flyway, Docker, Jira/Trello, Git',
+        },
+        {
+            group: 'Testing (familiar)',
+            description: 'Jasmine & Karma, Selenium',
+        },
+    ];
+
     private experiences: ExperienceModel[] = [
         {
             id: 4,
@@ -405,6 +445,10 @@ export class DataService {
             });
         }
         return result;     
+    }
+
+    getTechnicalSkills(): TechnicalSkillModel[] {
+        return this.technicalSkills;
     }
 
     // get by id

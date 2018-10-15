@@ -17,6 +17,7 @@ import { SkillsComponent } from './main/skills/skills.component';
 import { ModalDialogComponent } from './shared/components/modal-dialog/modal-dialog.component';
 import { SkillComponent } from './main/skills/skill/skill.component';
 import { ProjectComponent } from './main/projects/project/project.component';
+import { TechnicalSkillsComponent } from './main/technical-skills/technical-skills.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ProjectComponent } from './main/projects/project/project.component';
     SkillsComponent,
     ModalDialogComponent,
     SkillComponent,
-    ProjectComponent
+    ProjectComponent,
+    TechnicalSkillsComponent
   ],
   imports: [
     BrowserModule,

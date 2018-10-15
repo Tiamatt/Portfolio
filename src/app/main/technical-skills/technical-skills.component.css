@@ -1,0 +1,34 @@
+.placeForFixedNav{
+    background-color: rgba(19, 35, 47, 0.9);
+}
+.section_M {
+    color: rgba(38, 43, 47, 1);
+    background-color: rgba(225, 227, 228, 1);
+  }
+  .skillContainer_M{
+    display: flex;
+    display: -webkit-flex; /* Safari */
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap; /* Safari */
+    justify-content: center;   
+}
+  .row_M{
+    margin: 10px 10px 40px 10px;
+    border: 6px solid rgb(207, 210, 212);
+    box-shadow: 0 0 20px black;
+    color: rgba(19, 35, 47, 1);
+    background-color:rgba(214, 137, 16, 1);
+  }
+
+  .group_M{
+    float: left;
+    vertical-align: middle;
+    font-weight: 700;
+    font-size: 1.3rem;
+  }
+  .skills_M{
+    background-color:rgba(255, 255, 255, 1);
+    padding: 10px 20px;
+    border-left: 6px solid rgb(207, 210, 212);
+  }
+  

@@ -1,0 +1,22 @@
+<div id="Skills" class="section_M">
+
+  <!-- Header -->
+  <div class="placeForFixedNav"></div>
+  <h3 class="sectionHeader_M">Technical Skills</h3>
+
+<div class="skillContainer_M">
+    <div class="container container_M">
+      <div class="row row_M" *ngFor="let technicalSkill of technicalSkills">
+        <div class="col-sm-4 my-auto text-center group_M">
+            <p>{{technicalSkill.group}}</p>
+        </div>
+        <div class="col-sm-8 text-left skills_M">
+            <p>{{technicalSkill.description}}</p>
+        </div>
+      </div>
+    </div>
+    <div style="clear: both;"></div>
+  </div>
+
+
+</div>
